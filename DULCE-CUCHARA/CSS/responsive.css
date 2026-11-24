@@ -1,0 +1,68 @@
+
+/* TABLETAS */
+
+@media (max-width: 900px) {
+
+    .hero {
+        gap: 25px;
+    }
+
+    .category-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-container,
+    .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 45px 5%;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px 5%;
+    }
+
+    .nav-menu {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image img {
+        height: 260px;
+    }
+
+    .category-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-container,
+    .catalog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2,
+    .about h2 {
+        font-size: 28px;
+    }
+}

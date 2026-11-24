@@ -1,0 +1,77 @@
+
+/* =================================
+   DULCE CUCHARA - ESTILOS GENERALES
+================================= */
+
+:root {
+    --rosa: #e8a6ad;
+    --rosa-claro: #fcebed;
+    --crema: #fff9f2;
+    --cafe: #65443b;
+    --cafe-oscuro: #39251f;
+    --dorado: #c9a46a;
+    --blanco: #ffffff;
+    --gris: #777777;
+
+    --fuente-titulo: Georgia, serif;
+    --fuente-texto: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--crema);
+    color: var(--cafe-oscuro);
+    font-family: var(--fuente-texto);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section {
+    padding: 70px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading span {
+    color: var(--dorado);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    color: var(--cafe);
+    font-family: var(--fuente-titulo);
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.section-heading p {
+    color: var(--gris);
+}

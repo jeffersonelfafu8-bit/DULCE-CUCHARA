@@ -1,0 +1,292 @@
+
+/* ESTILOS DEL CARRITO */
+
+/* ==========================================
+   DULCE CUCHARA - PÁGINA DEL PEDIDO
+========================================== */
+
+.pedido-page {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 55px 0 80px;
+}
+
+.pedido-encabezado {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.pedido-etiqueta {
+    color: #b77962;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.pedido-encabezado h1 {
+    color: #563b32;
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+.pedido-encabezado > p:last-child {
+    color: #806d65;
+}
+
+.pedido-contenido {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.pedido-productos,
+.resumen-pedido {
+    background: #fff;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 5px 25px rgba(70, 45, 30, 0.07);
+}
+
+.pedido-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.pedido-titulo h2,
+.resumen-pedido h2 {
+    color: #563b32;
+    font-size: 21px;
+}
+
+.pedido-titulo span {
+    color: #987b6d;
+    font-size: 13px;
+}
+
+.producto-carrito {
+    display: grid;
+    grid-template-columns: 105px 1fr auto;
+    gap: 18px;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #f0e8e2;
+}
+
+.producto-carrito img {
+    width: 105px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.producto-carrito-info h3 {
+    color: #563b32;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.producto-carrito-info p {
+    color: #907c71;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.producto-carrito-precio {
+    color: #a7654e;
+    font-weight: 700;
+}
+
+.controles-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.controles-cantidad button {
+    width: 29px;
+    height: 29px;
+    border: 1px solid #e5d5cb;
+    background: #fff9f5;
+    border-radius: 8px;
+    color: #754d3e;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.controles-cantidad span {
+    font-weight: 600;
+    color: #563b32;
+}
+
+.btn-eliminar {
+    border: none;
+    background: transparent;
+    color: #b45d55;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 9px;
+}
+
+.producto-carrito-total {
+    color: #563b32;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.seguir-comprando {
+    display: inline-block;
+    margin-top: 25px;
+    color: #a7654e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.seguir-comprando:hover {
+    text-decoration: underline;
+}
+
+/* Resumen */
+
+.resumen-pedido {
+    position: sticky;
+    top: 25px;
+}
+
+.resumen-pedido h2 {
+    margin-bottom: 25px;
+}
+
+.resumen-linea {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    color: #806d65;
+    font-size: 14px;
+    margin-bottom: 19px;
+}
+
+.resumen-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee2da;
+    padding-top: 22px;
+    margin-top: 10px;
+    color: #563b32;
+    font-size: 17px;
+}
+
+.resumen-total strong {
+    color: #a7654e;
+    font-size: 23px;
+}
+
+.btn-whatsapp {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 16px 12px;
+    margin-top: 25px;
+    background: #6d9b69;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-whatsapp:hover {
+    background: #587f54;
+}
+
+.resumen-nota {
+    color: #98877e;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Carrito vacío */
+
+.carrito-vacio {
+    text-align: center;
+    padding: 45px 15px;
+}
+
+.carrito-vacio .carrito-icono {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.carrito-vacio h3 {
+    color: #563b32;
+    margin-bottom: 10px;
+}
+
+.carrito-vacio p {
+    color: #907c71;
+    margin-bottom: 20px;
+}
+
+.btn-ir-catalogo {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #a7654e;
+    color: white;
+    text-decoration: none;
+    border-radius: 9px;
+}
+
+/* Adaptación a móviles */
+
+@media (max-width: 800px) {
+    .pedido-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .resumen-pedido {
+        position: static;
+    }
+}
+
+@media (max-width: 520px) {
+    .pedido-page {
+        width: 94%;
+        padding-top: 35px;
+    }
+
+    .pedido-encabezado h1 {
+        font-size: 30px;
+    }
+
+    .pedido-productos,
+    .resumen-pedido {
+        padding: 18px;
+    }
+
+    .producto-carrito {
+        grid-template-columns: 78px 1fr;
+        gap: 12px;
+    }
+
+    .producto-carrito img {
+        width: 78px;
+        height: 88px;
+    }
+
+    .producto-carrito-total {
+        grid-column: 2;
+    }
+
+    .pedido-titulo {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

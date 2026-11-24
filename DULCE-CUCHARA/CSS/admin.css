@@ -1,0 +1,41 @@
+
+/* PANEL ADMINISTRATIVO */
+
+.admin-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 25px;
+}
+
+.admin-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.admin-form {
+    display: grid;
+    gap: 15px;
+}
+
+.admin-form input,
+.admin-form textarea,
+.admin-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.admin-button {
+    background: var(--cafe);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+}
+
+.admin-button:hover {
+    background: var(--rosa);
+}

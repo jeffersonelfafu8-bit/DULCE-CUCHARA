@@ -1,0 +1,174 @@
+
+/* ==========================================
+   DULCE CUCHARA
+   DISEÑO DEL CATÁLOGO
+========================================== */
+
+.catalog-section {
+    min-height: 70vh;
+    background-color: var(--crema);
+}
+
+.catalog-toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.catalog-toolbar input,
+.catalog-toolbar select {
+    padding: 14px 20px;
+    border: 1px solid #ead9d5;
+    border-radius: 30px;
+    background-color: white;
+    color: var(--cafe);
+    font-size: 14px;
+    outline: none;
+}
+
+.catalog-toolbar input {
+    width: 320px;
+    max-width: 100%;
+}
+
+.catalog-toolbar input:focus,
+.catalog-toolbar select:focus {
+    border-color: var(--rosa);
+    box-shadow: 0 0 0 3px rgba(232,166,173,0.15);
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+/* TARJETAS */
+
+.product-card {
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(101,68,59,0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(101,68,59,0.13);
+}
+
+.product-link {
+    display: block;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    padding: 22px;
+}
+
+.product-category {
+    color: var(--dorado);
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.product-info h3 {
+    font-family: var(--fuente-titulo);
+    color: var(--cafe);
+    font-size: 22px;
+    margin: 8px 0;
+}
+
+.product-info p {
+    color: var(--gris);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product-info .product-size {
+    font-size: 12px;
+}
+
+.product-info .product-price {
+    color: var(--rosa);
+    font-size: 21px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.btn-add {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--rosa);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-add:hover {
+    background-color: var(--cafe);
+}
+
+.btn-add:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.detail-link {
+    display: block;
+    text-align: center;
+    color: var(--cafe);
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.detail-link:hover {
+    color: var(--rosa);
+}
+
+.sin-resultados {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--gris);
+    padding: 50px 15px;
+}
+
+@media (max-width: 900px) {
+    .catalog-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .catalog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-toolbar {
+        flex-direction: column;
+    }
+
+    .catalog-toolbar input,
+    .catalog-toolbar select {
+        width: 100%;
+    }
+}

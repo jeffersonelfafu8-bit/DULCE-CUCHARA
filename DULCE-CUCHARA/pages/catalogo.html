@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo | Dulce Cuchara</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/catalogo.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <a href="../index.html" class="logo">
+                Dulce <span>Cuchara.</span>
+            </a>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="pedido.html">Mi pedido</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="section-heading">
+                <span>NUESTROS PRODUCTOS</span>
+                <h1>Catálogo de postres</h1>
+                <p>Encuentra tu próximo antojo favorito.</p>
+            </div>
+
+            <div class="catalog-toolbar">
+                <input type="search" id="buscador"
+                    placeholder="Buscar un postre...">
+
+                <select id="filtro-categoria">
+                    <option value="todos">Todas las categorías</option>
+                    <option value="clasicos">Clásicos</option>
+                    <option value="tradicionales">Tradicionales</option>
+                    <option value="frutales">Frutales</option>
+                    <option value="especiales">Especiales</option>
+                </select>
+            </div>
+
+            <div id="catalogo-productos" class="catalog-grid">
+                <!-- Productos cargados con JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h2>Dulce Cuchara</h2>
+        <p>Pequeños antojos, grandes momentos.</p>
+    </footer>
+
+    <script src="../js/productos.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/catalogo.js"></script>
+
+
+</body>
+</html>

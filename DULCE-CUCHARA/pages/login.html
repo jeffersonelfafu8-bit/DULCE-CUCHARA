@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso administrativo | Dulce Cuchara</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <main class="admin-container">
+        <div class="admin-card">
+            <h1>Administración</h1>
+            <p>Ingresa tus credenciales para continuar.</p>
+
+            <form id="login-form" class="admin-form">
+                <input type="email" id="correo"
+                    placeholder="Correo electrónico" required>
+
+                <input type="password" id="contrasena"
+                    placeholder="Contraseña" required>
+
+                <button type="submit" class="admin-button">
+                    Iniciar sesión
+                </button>
+            </form>
+
+            <a href="../index.html">Volver al inicio</a>
+        </div>
+    </main>
+
+    <script src="../js/auth.js"></script>
+</body>
+</html>

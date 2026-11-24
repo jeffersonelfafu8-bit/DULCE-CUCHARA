@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pedido | Dulce Cuchara</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">Dulce Cuchara</a>
+
+            <nav class="nav">
+                <a href="../index.html">Inicio</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="pedido.html" class="active">Mi pedido</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pedido-page">
+        <section class="pedido-encabezado">
+            <p class="pedido-etiqueta">UN ANTOJO ESPECIAL</p>
+            <h1>Mi pedido</h1>
+            <p>Revisa tus postres favoritos antes de realizar tu pedido.</p>
+        </section>
+
+        <section class="pedido-contenido">
+
+            <!-- Productos agregados -->
+            <div class="pedido-productos">
+                <div class="pedido-titulo">
+                    <h2>Tu selección</h2>
+                    <span id="cantidad-productos">0 productos</span>
+                </div>
+
+                <div id="lista-carrito">
+                    <!-- Los productos se mostrarán desde JavaScript -->
+                </div>
+
+                <a href="catalogo.html" class="seguir-comprando">
+                    ← Seguir explorando postres
+                </a>
+            </div>
+
+            <!-- Resumen de compra -->
+            <aside class="resumen-pedido">
+                <h2>Resumen del pedido</h2>
+
+                <div class="resumen-linea">
+                    <span>Productos</span>
+                    <span id="resumen-cantidad">0</span>
+                </div>
+
+                <div class="resumen-linea">
+                    <span>Subtotal</span>
+                    <span id="subtotal-pedido">$0</span>
+                </div>
+
+                <div class="resumen-linea">
+                    <span>Domicilio</span>
+                    <span>Por confirmar</span>
+                </div>
+
+                <div class="resumen-total">
+                    <span>Total</span>
+                    <strong id="total-pedido">$0</strong>
+                </div>
+
+                <button type="button" id="btn-whatsapp" class="btn-whatsapp">
+                    Realizar pedido por WhatsApp
+                </button>
+
+                <p class="resumen-nota">
+                    El costo del domicilio se confirmará al coordinar tu pedido.
+                </p>
+            </aside>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Dulce Cuchara. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/productos.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/pedido.js"></script>
+
+</body>
+</html>
